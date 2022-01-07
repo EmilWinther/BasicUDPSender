@@ -24,7 +24,7 @@ namespace BasicUDPSender
         public static void SendData(UdpClient socket, string message)
         {
             byte[] data = Encoding.UTF8.GetBytes(message);
-            socket.Send(data, data.Length, "255.255.255.255", 6000);
+            socket.Send(data, data.Length, "255.255.255.255", 7000);
         }
     }
 }
